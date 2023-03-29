@@ -172,7 +172,7 @@ def openChrome():
 if __name__=="__main__":
     obj=json.load(open("questions.json","r",encoding="utf-8"))#读取json文件获取要填写的信息
     weights=json.load(open("weights.json","r",encoding="utf-8"))
-    times=10
+    times=30
     for each in range(times):
         #防止系统原因出现问卷没有及时开放
         driver=openChrome()#预加载浏览器
